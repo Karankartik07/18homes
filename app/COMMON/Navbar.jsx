@@ -131,45 +131,18 @@ export default function Navbar({color}) {
 
           {/* SERVICES ACCORDION */}
           <div className="flex flex-col">
-            <button
+            <Link
+            href={"/service"}
               onClick={() => setShowServices(!showServices)}
               className="flex justify-between items-center w-full"
             >
-              Services{" "}
-              <IoIosArrowDown
-                className={`transition-transform ${
-                  showServices ? "rotate-180" : ""
-                }`}
-              />
-            </button>
+              Services
+              
+            </Link>
 
-            {showServices && (
-              <div className="pl-4 mt-3 flex flex-col space-y-3 text-[16px] text-gray-700">
-                <Link
-                  href="/service/dj-for-school"
-                  onClick={() => setOpen(false)}
-                >
-                  DJ Services
-                </Link>
-                <Link href="/" onClick={() => setOpen(false)}>
-                  Wedding
-                </Link>
-                <Link href="/" onClick={() => setOpen(false)}>
-                  Party
-                </Link>
-                <Link href="/" onClick={() => setOpen(false)}>
-                  Corporate Events
-                </Link>
-              </div>
-            )}
+         
           </div>
 
-          <Link href="/gallery" onClick={() => setOpen(false)}>
-            Gallery
-          </Link>
-          <Link href="/blogs" onClick={() => setOpen(false)}>
-            Blog
-          </Link>
           <Link href="/contact" onClick={() => setOpen(false)}>
             Contact Us
           </Link>
