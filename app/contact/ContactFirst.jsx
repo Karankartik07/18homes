@@ -1,28 +1,97 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import "./contact.css";
 import { FaMapMarked, FaMapMarkedAlt } from "react-icons/fa";
-import { FiPhoneCall } from "react-icons/fi";
+import { FiCheckCircle, FiPhoneCall } from "react-icons/fi";
 import { IoMdMailOpen } from "react-icons/io";
 
-
 export default function ContactFirst() {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    website: "",
+    discussion: "",
+  });
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState("");
+  const [showPopup, setShowPopup] = useState(false); // ✅ New state for popup
+  const [checked, setChecked] = useState(false); // ✅ Privacy policy checkbox state
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setMessage("");
+    // Prevent only spaces
+    if (value.trim() === "" && value.length > 0) return;
+    setForm((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setMessage("");
+    if (!checked) {
+      setMessage("Please accept the privacy policy to submit the form.");
+      return;
+    }
+    if (!form?.name || !form?.email || !form?.phone) {
+      setMessage("Please fill all required fields.");
+      return;
+    }
+    // Basic email validation
+    const emailRegex =
+      /^(?!.*\.\.)(?!.*[_.-]{2})[a-zA-Z0-9]+([._-]?[a-zA-Z0-9]+)*@[a-zA-Z0-9]+([.-]?[a-zA-Z0-9]+)*\.[A-Za-z]{2,}$/;
+    if (!emailRegex.test(form?.email)) {
+      setMessage("Please enter a valid email address.");
+      return;
+    }
+    // Phone validation: only digits, exactly 10 digits
+    const phoneRegex = /^\d{10}$/;
+    if (!phoneRegex.test(form?.phone)) {
+      setMessage("Please enter a valid 10-digit phone number.");
+      return;
+    }
+    setLoading(true);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setForm({
+          name: "",
+          email: "",
+          phone: "",
+          website: "",
+          discussion: "",
+        });
+        setChecked(false);
+        setShowPopup(true); // ✅ Show popup on success
+      }
+    } catch (err) {
+      console.error("Form submission error:", err);
+      setMessage("Something went wrong. Please try again.");
+    }
+    setLoading(false);
+  };
+
+
+
   return (
     <>
       <section className="contact-wrapper">
         <div className="contact-container">
-
           <p className="contact-heading-top">Contact Us</p>
 
           <h2 className="contact-main-heading">
-            CONNECT WITH <span className="pink-text">18HOMES</span> SUPPORT
+            CONNECT WITH <span className="pink-text">18 Homes</span>{" "}
+            SUPPORT
           </h2>
 
           <div className="contact-grid">
-
             {/* LEFT SIDE */}
             <div className="left-info">
-
               <div className="info-block">
                 <div className="icon-wrap">
                   <FiPhoneCall size={30} />
@@ -30,7 +99,7 @@ export default function ContactFirst() {
 
                 <div>
                   <p className="info-title">Give Us A Call</p>
-                  <p className="info-value">+91 8707592647</p>
+                  <p className="info-value">+911234567890</p>
                 </div>
               </div>
 
@@ -43,7 +112,7 @@ export default function ContactFirst() {
 
                 <div>
                   <p className="info-title">Send Us A Message</p>
-                  <p className="info-value">18homes@gmail.com</p>
+                  <p className="info-value">abc@gmail.com</p>
                 </div>
               </div>
 
@@ -57,11 +126,9 @@ export default function ContactFirst() {
                 <div>
                   <p className="info-title">Visit Our Location</p>
                   <p className="info-value">
-                    MB-27 Basement, Regalia Heights,
-                    Shipra Suncity, Ghaziabad.
+                    MB-27 Basement, Regalia Heights, Shipra Suncity, Ghaziabad.
                   </p>
                 </div>
-
               </div>
               <hr />
               {/* BOTTOM SOCIAL ICONS */}
@@ -80,36 +147,133 @@ export default function ContactFirst() {
                   </div>
                 </div>
               </div>
-
-
-
             </div>
 
             {/* RIGHT FORM */}
-            <form className="right-form">
-
+            <form className="right-form" onSubmit={handleSubmit}>
               <div className="input-row">
-                <input type="text" placeholder="Enter Name.*" />
-                <input type="text" placeholder="Enter Mobile No.*" />
+                <input
+                  type="text"
+                  name="name"
+                  value={form?.name}
+                  onChange={(e) => {
+                    // Allow alphabets and spaces, but not only spaces
+                    let val = e.target.value.replace(/[^A-Za-z ]/g, "");
+                    // Prevent leading/trailing multiple spaces
+                    val = val.replace(/\s{2,}/g, " ");
+                    // Prevent only spaces
+                    if (val.length > 0 && val.trim() === "") return;
+                    setForm((prev) => ({ ...prev, name: val }));
+                  }}
+                  placeholder="Enter Name.*"
+                  required
+                  autoComplete="off"
+                />
+                <input
+                  type="text"
+                  name="phone"
+                  value={form?.phone}
+                  onChange={(e) => {
+                    // Only allow digits
+                    setMessage("");
+                    const val = e.target.value.replace(/[^0-9]/g, "");
+                    setForm((prev) => ({ ...prev, phone: val }));
+                  }}
+                  maxLength={10}
+                  required
+                  autoComplete="off"
+                  placeholder="Enter Mobile No.*"
+                />
               </div>
 
               <div className="input-row">
-                <input type="email" placeholder="Email Address" />
-                <input type="text" placeholder="Select Event for" />
+                <input
+                  type="email"
+                  name="email"
+                  value={form?.email}
+                  onChange={handleChange}
+                  required
+                  autoComplete="off"
+                  placeholder="Email Address"
+                />
+                <input
+                  type="text"
+                  name="website"
+                  value={form?.website}
+                  onChange={handleChange}
+                  placeholder="Select Event for"
+                />
               </div>
 
-              <textarea rows={2} placeholder="Your Message"></textarea>
-
+              <textarea
+                rows={2}
+                id="discussion"
+                name="discussion"
+                value={form?.discussion}
+                onChange={handleChange}
+                placeholder="Your Message"
+              ></textarea>
+              {/* Privacy Policy Checkbox */}
+              <div>
+                <label
+                  className="flex items-center"
+                  style={{ fontSize: "14px" }}
+                >
+                  <input
+                    className="!w-[20px]"
+                    type="checkbox"
+                    checked={checked}
+                    onChange={(e) => setChecked(e.target.checked)}
+                    style={{ marginRight: "8px" }}
+                  />
+                  I accept the{" "}
+                  <a
+                    href="/privacy-policy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    privacy policy
+                  </a>
+                  .
+                </label>
+              </div>
+              {message && (
+                <div
+                  style={{
+                    marginTop: 8,
+                    color: message.includes("Thank") ? "green" : "red",
+                  }}
+                >
+                  {message}
+                </div>
+              )}
               {/* BUTTON */}
               <button type="submit" className="submit-message-btn relative">
                 <span className="submit-circle"></span>
-                <span className=" z-50 absolute left-[32px]  ">SUBMIT MESSAGE</span>
+                <span className=" z-50 absolute left-[32px]  ">
+                  {loading ? "Sending..." : "SUBMIT MESSAGE"}
+                </span>
               </button>
-
             </form>
-
           </div>
         </div>
+         {showPopup && (
+                <div className="popup-overlay">
+                    <div className="popup-content">
+                        <div className="popup-icon">
+                            <FiCheckCircle size={60} color="green" />
+                        </div>
+                        <h2>Thank You!</h2>
+                        <p>Your message has been sent successfully. Our team will contact you soon.</p>
+                        <button
+                            className="popup-btn"
+                            onClick={() => setShowPopup(false)}
+                        >
+                            Close
+                        </button>
+                    </div>
+                </div>
+            )}
       </section>
 
       {/* ================= MAP SECTION ================= */}
