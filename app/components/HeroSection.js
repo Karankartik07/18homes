@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 
 export default function HeroSlider() {
   return (
-    <section className="relative max-w-[1720px] mx-auto w-full h-[90vh]">
+    <section className="relative max-w-[1720px] mx-auto w-full h-[60vh] sm:h-[90vh]">
       <Swiper
         modules={[Autoplay, Pagination, EffectFade]}
         effect="fade"
@@ -61,7 +61,7 @@ export default function HeroSlider() {
 
 function BannerSlide({ image }) {
   return (
-    <div className="relative w-full h-[90vh] flex  items-center justify-center text-center">
+    <div className="relative w-full sm:h-[90vh] h-[60vh] flex  items-center justify-center text-center">
       {/* Background Image */}
       <Image
         src={image}

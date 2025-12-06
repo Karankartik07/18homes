@@ -105,7 +105,7 @@ export default function Navbar({color}) {
           className="hamburger-icon lg:hidden text-black text-4xl"
           onClick={() => setOpen(!open)}
         >
-          {open ? <IoMdClose /> : <GiHamburgerMenu className={`${!isScrolled && !open ? "block":"hidden"}`} />}
+          {open ? <IoMdClose /> : <GiHamburgerMenu className={`${!isScrolled ? "text-white":"text-black"}`} />}
         </button>
       </div>
 

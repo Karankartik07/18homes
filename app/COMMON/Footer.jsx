@@ -72,7 +72,7 @@ src={"https://res.cloudinary.com/dxlykgx6w/image/upload/v1764947537/5771-removeb
       </div>
 
       {/* LINE */}
-      <div className="max-w-[1350px] w-[1300px] px-6 lg:px-12 mx-auto border-t border-[#9FABC1] mt-14"></div>
+      <div className="max-w-[1350px]  px-6 lg:px-12 mx-auto border-t border-[#9FABC1] mt-14"></div>
 
       {/* COPYRIGHT + SOCIAL */}
       <div className="max-w-[1450px] mx-auto px-6 lg:px-12 py-8 flex flex-col md:flex-row items-center justify-between gap-6 text-black">
