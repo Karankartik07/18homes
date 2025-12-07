@@ -10,31 +10,32 @@ import "swiper/css/pagination";
 
 export default function Testimonials() {
     const data = [
-        {
-            text: "The platform feels personal, like it knows exactly what I need and when I need it. Whether I'm working, relaxing, or hyping myself up, Rockon always delivers the perfect vibe.",
-            name: "Jane Cooper",
-            role: "Music Lover",
-            img: "https://res.cloudinary.com/dal5dlztv/image/upload/v1757578556/Ellipse_8_1_fr81tw.png",
-        },
-        {
-            text: "The platform feels personal, like it knows exactly what I need and when I need it. Whether I'm working, relaxing, or hyping myself up, Rockon always delivers the perfect vibe.",
-            name: "Emma Doe",
-            role: "Music Lover",
-            img: "https://res.cloudinary.com/dal5dlztv/image/upload/v1757578561/Ellipse_8_fyouzw.png",
-        },
-        {
-            text: "The platform feels personal, like it knows exactly what I need and when I need it. Whether I'm working, relaxing, or hyping myself up, Rockon always delivers the perfect vibe.",
-            name: "Alex Carter",
-            role: "DJ Artist",
-            img: "https://res.cloudinary.com/dal5dlztv/image/upload/v1757578556/Ellipse_8_1_fr81tw.png",
-        },
-        {
-            text: "The platform feels personal, like it knows exactly what I need and when I need it. Whether I'm working, relaxing, or hyping myself up, Rockon always delivers the perfect vibe.",
-            name: "Sofia Lancer",
-            role: "Producer",
-            img: "https://res.cloudinary.com/dal5dlztv/image/upload/v1757578561/Ellipse_8_fyouzw.png",
-        }
-    ];
+  {
+    text: "18Homes की सेवा बिल्कुल व्यक्तिगत लगती है। यह समझती है कि मुझे कब और कैसी प्रॉपर्टी की ज़रूरत है। चाहे मैं परिवार के लिए घर ढूँढ़ रहा हूँ या रेंटल ऑप्शन—18Homes हमेशा सही सुझाव देती है।",
+    name: "Jane Cooper",
+    role: "किरायेदार",
+    img: "https://res.cloudinary.com/dal5dlztv/image/upload/v1757578556/Ellipse_8_1_fr81tw.png",
+  },
+  {
+    text: "मेरे लिए सबसे अच्छा अनुभव यह रहा कि 18Homes बिना किसी ब्रोकरज के सही लोकेशन में घर दिखाती है। उनकी टीम बहुत प्रोफेशनल और मददगार है।",
+    name: "Emma Doe",
+    role: "होम बायर",
+    img: "https://res.cloudinary.com/dal5dlztv/image/upload/v1757578561/Ellipse_8_fyouzw.png",
+  },
+  {
+    text: "मुझे कमर्शियल स्पेस चाहिए था और 18Homes ने मुझे एकदम परफेक्ट ऑप्शन दिलवाया। समय, बजट और लोकेशन—सब सही मिला।",
+    name: "Alex Carter",
+    role: "बिज़नेस ओनर",
+    img: "https://res.cloudinary.com/dal5dlztv/image/upload/v1757578556/Ellipse_8_1_fr81tw.png",
+  },
+  {
+    text: "18Homes के साथ प्रॉपर्टी ढूँढ़ना बेहद आसान हो गया। वेबसाइट यूज़र–फ्रेंडली है और टीम हर स्टेप पर गाइड करती है। बहुत शानदार अनुभव!",
+    name: "Sofia Lancer",
+    role: "प्रॉपर्टी सीकर",
+    img: "https://res.cloudinary.com/dal5dlztv/image/upload/v1757578561/Ellipse_8_fyouzw.png",
+  }
+];
+
 
     return (
         <section
@@ -43,13 +44,13 @@ export default function Testimonials() {
             {/* Heading */}
             <div className="text-center mb-12 px-4">
                 <h2 className="text-[40px] text-white font-semibold mb-4">
-                    What Our Client Says
+                  हमारे क्लाइंट क्या कहते हैं
                 </h2>
 
                 <div className="w-[140px] h-[3px] bg-gradient-to-r from-[#bc67ff] to-[#4da6ff] mx-auto mb-6"></div>
 
                 <p className="text-[#8f8f9a] max-w-[500px] mx-auto text-[18px] leading-relaxed">
-                    Our streamlined booking process ensures that you spend less time waiting and more time rocking out.
+                   हमारी सरल और तेज़ प्रक्रिया यह सुनिश्चित करती है कि आपको घर खोजने में कम समय लगे और सही प्रॉपर्टी जल्दी मिले।
                 </p>
             </div>
 
