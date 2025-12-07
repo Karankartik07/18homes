@@ -77,14 +77,14 @@ export default function Footer() {
             <div className="flex items-center gap-3 mb-4">
               <IoMdMail size={22} />
               <p className="text-[16px] font-normal">
-                djharmonybeats@gmail.com
+                18homes@gmail.com
               </p>
             </div>
 
             <div className="flex items-center gap-3">
               <IoMdCall size={22} />
               <p className="text-[16px] font-normal">
-                +91 9056377665 / +91 9878549476
+                +91 90000000 / +91 9000000
               </p>
             </div>
           </div>
