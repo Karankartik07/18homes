@@ -279,7 +279,7 @@ export default function ContactFirst() {
       {/* ================= MAP SECTION ================= */}
       <section className="map-section">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1750.9068180297566!2d77.37318488857568!3d28.63534709805912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5af51299c15%3A0x14f31deb7b3887b0!2sDj%20Harmony%20Beats!5e0!3m2!1sen!2sin!4v1764173397758!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28000.172833179113!2d77.47271883869992!3d28.689000340540407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf230c51204b1%3A0xd053494ad5b99485!2sGovindpuram%2C%20Ghaziabad%2C%20Uttar%20Pradesh%20201013!5e0!3m2!1sen!2sin!4v1765114558215!5m2!1sen!2sin"
           width="100%"
           height="450"
           style={{ border: "0" }}
