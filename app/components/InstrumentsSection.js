@@ -10,19 +10,19 @@ export default function InstrumentsSection() {
             <div className="text-center max-w-[1100px] mx-auto px-6">
                 <h3 className="text-[32px] md:text-[38px] text-black mb-3" style={{ fontFamily: "'Dancing Script', cursive" }}
 >
-                    Music Instruments
+                18Homes – Premium Property Solutions
                 </h3>
 
                 <h2 className="text-[42px] md:text-[44px] font-bold text-black leading-snug mb-6">
-                    DJ Harmony Beats Instruments
+                    18Homes – प्रीमियम प्रॉपर्टी समाधान
                 </h2>
 
                 <p className="text-[18px] md:text-[20px] text-gray-700 ">
-                    Industrial Standard and Professional gears such as Speakers , Subs,
+                   हम इंडस्ट्री स्टैंडर्ड और प्रोफेशनल रियल-एस्टेट सेवाएँ प्रदान करते हैं,
                     <br />
-                    Line Array, Mixing Consoles, DJ Controllers, Amplifiers, Microphones,
+                    हमारी टीम आपको सही प्रॉपर्टी चुनने में मदद करती है
                     <br />
-                    Lighting DJ Floors and Trussing.
+                   बजट, लोकेशन और लाइफस्टाइल सभी को ध्यान में रखते हुए।
                 </p>
             </div>
 

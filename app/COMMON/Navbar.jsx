@@ -63,23 +63,21 @@ export default function Navbar({color}) {
             className={`desktop-menu hidden lg:flex items-center gap-8 ${isScrolled ? "text-black" : `text-${color}`} text-[18px]`}
           >
             <li>
-              <Link href="/">Home</Link>
+              <Link href="/">होम</Link>
             </li>
             <li>
-              <Link href="/about">About Us</Link>
+              <Link href="/about">हमारे बारे में</Link>
             </li>
 
-            {/* SERVICES DROPDOWN FIXED */}
+        
             <li className="relative group cursor-pointer">
-                  <Link href="/service">Serivce</Link>
-
-         
-             
+                  <Link href="/service">हमारी सेवाएँ</Link>    
+            
             </li>
 
             
             <li>
-              <Link href="/contact">Contact Us</Link>
+              <Link href="/contact">संपर्क करें</Link>
             </li>
           </ul>
         </div>
@@ -90,14 +88,14 @@ export default function Navbar({color}) {
             href={"/contact"}
             className="px-7 py-2 font-bold border border-[#4dd2ff] text-[#4dd2ff] rounded-full text-[18px] hover:bg-[#4dd2ff]/20 transition"
           >
-            Book Now
+            अभी बुक करें
           </Link>
 
           <a
             href="tel:+919876543210"
             className="px-7 py-2 font-bold bg-[#3FFAFF] text-[#101010] rounded-full text-[18px] hover:bg-[#3be8f3] transition"
           >
-            Call Now
+            कॉल करें
           </a>
         </div>
 
@@ -123,10 +121,10 @@ export default function Navbar({color}) {
       >
         <div className="flex flex-col space-y-7 text-black text-[18px] ">
           <Link href="/" onClick={() => setOpen(false)}>
-            Home
+            होम
           </Link>
           <Link href="/about" onClick={() => setOpen(false)}>
-            About Us
+            हमारे बारे में
           </Link>
 
           {/* SERVICES ACCORDION */}
@@ -136,7 +134,7 @@ export default function Navbar({color}) {
               onClick={() => setShowServices(!showServices)}
               className="flex justify-between items-center w-full"
             >
-              Services
+              हमारी सेवाएँ
               
             </Link>
 
@@ -144,21 +142,21 @@ export default function Navbar({color}) {
           </div>
 
           <Link href="/contact" onClick={() => setOpen(false)}>
-            Contact Us
+            संपर्क करें
           </Link>
 
           <Link
             href={"/contact"}
             className="w-[200px] px-7 mt-4 py-2 border border-[#4dd2ff] text-[#4dd2ff] rounded-full"
           >
-            Book Now
+            अभी बुक करें
           </Link>
 
           <a
             href="tel:+919876543210"
             className="w-[200px] px-7 py-2 bg-[#4df5ff] text-black rounded-full"
           >
-            Call Now
+            कॉल करें
           </a>
         </div>
       </div>

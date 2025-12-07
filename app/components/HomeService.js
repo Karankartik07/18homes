@@ -3,37 +3,38 @@ import Image from "next/image";
 
 export default function HomeServices() {
   const services = [
-    {
-      title: "Harmony Wedding Dj",
-      desc: "The citation ceremony at RVS was graced by our chief guest, Dr.Amna Mirza, an eminent academician, author, entrepreneur and curator of ideas. She motivated the students with her wise words and wished them a bright future.",
-      img: "https://res.cloudinary.com/dxlykgx6w/image/upload/v1764928068/3d-rendering-luxury-modern-bedroom-suite-hotel-with-tv-cabinet_105762-2280_ozfq80.avif",
-    },
-    {
-      title: "Birthday Parties",
-      desc: "The citation ceremony at RVS was graced by our chief guest, Dr.Amna Mirza, an eminent academician, author, entrepreneur and curator of ideas. She motivated the students with her wise words and wished them a bright future.",
-      img: "https://res.cloudinary.com/dxlykgx6w/image/upload/v1764928068/3d-rendering-luxury-modern-bedroom-suite-hotel-with-tv-cabinet_105762-2280_ozfq80.avif",
-    },
-    {
-      title: "Festivals Cultural Events",
-      desc: "The citation ceremony at RVS was graced by our chief guest, Dr.Amna Mirza, an eminent academician, author, entrepreneur and curator of ideas. She motivated the students with her wise words and wished them a bright future.",
-      img: "https://res.cloudinary.com/dxlykgx6w/image/upload/v1764928067/cozy-living-room-with-coral-sofa_23-2152001401_mtbfyd.avif",
-    },
-    {
-      title: "Corporate Events",
-      desc: "The citation ceremony at RVS was graced by our chief guest, Dr.Amna Mirza, an eminent academician, author, entrepreneur and curator of ideas. She motivated the students with her wise words and wished them a bright future.",
-      img: "https://res.cloudinary.com/dxlykgx6w/image/upload/v1764928067/3d-rendering-modern-dining-room-living-room-with-luxury-decor-green-sofa_105762-2140_eu0udp.avif",
-    },
-    {
-      title: "Harmony Wedding Dj",
-      desc: "The citation ceremony at RVS was graced by our chief guest, Dr.Amna Mirza, an eminent academician, author, entrepreneur and curator of ideas. She motivated the students with her wise words and wished them a bright future.",
-      img: "https://res.cloudinary.com/dxlykgx6w/image/upload/v1764928068/3d-rendering-modern-dining-room-living-room-with-luxury-decor-yellow-lamp_105762-2232_iu2qqe.avif",
-    },
-    {
-      title: "Birthday Parties",
-      desc: "The citation ceremony at RVS was graced by our chief guest, Dr.Amna Mirza, an eminent academician, author, entrepreneur and curator of ideas. She motivated the students with her wise words and wished them a bright future.",
-      img: "https://res.cloudinary.com/dxlykgx6w/image/upload/v1764928067/comfortable-living-room-with-gray-sofa_305343-17365_zlfzp5.avif",
-    },
-  ];
+  {
+    title: "1 BHK फ्लैट किराये पर",
+    desc: "प्राइम लोकेशन में सुरक्षित और वेरिफाइड 1 BHK फ्लैट्स। सस्ती कीमत, मॉडर्न इंटीरियर और आरामदायक रहने की सुविधा के साथ तुरंत शिफ्ट होने का विकल्प।",
+    img: "https://res.cloudinary.com/dxlykgx6w/image/upload/v1764928068/3d-rendering-luxury-modern-bedroom-suite-hotel-with-tv-cabinet_105762-2280_ozfq80.avif",
+  },
+  {
+    title: "2 BHK फैमिली अपार्टमेंट",
+    desc: "परिवारों के लिए बेहतरीन 2 BHK विकल्प, जिसमें बड़े कमरे, पर्याप्त रोशनी और 24/7 सुरक्षा उपलब्ध है। स्कूल, मार्केट और मेट्रो के पास शानदार लोकेशन।",
+    img: "https://res.cloudinary.com/dxlykgx6w/image/upload/v1764928068/3d-rendering-luxury-modern-bedroom-suite-hotel-with-tv-cabinet_105762-2280_ozfq80.avif",
+  },
+  {
+    title: "3 BHK लक्ज़री फ्लैट",
+    desc: "बड़े परिवारों के लिए प्रीमियम 3 BHK अपार्टमेंट, जिसमें हाई-क्लास इंटीरियर, विशाल स्पेस और मॉडर्न सुविधाएं मौजूद हैं। एक बेहतर और आरामदायक लाइफस्टाइल के लिए परफेक्ट।",
+    img: "https://res.cloudinary.com/dxlykgx6w/image/upload/v1764928067/cozy-living-room-with-coral-sofa_23-2152001401_mtbfyd.avif",
+  },
+  {
+    title: "फ्लैट खरीदने की सुविधा",
+    desc: "Verified प्रॉपर्टी, transparent deals और आसान documentation के साथ दिल्ली-NCR में आपकी पसंद का फ्लैट खरीदने की सेवा। पहले देखें, फिर भरोसा करें।",
+    img: "https://res.cloudinary.com/dxlykgx6w/image/upload/v1764928067/3d-rendering-modern-dining-room-living-room-with-luxury-decor-green-sofa_105762-2140_eu0udp.avif",
+  },
+  {
+    title: "PG / रूम ऑन रेंट",
+    desc: "स्टूडेंट्स और बैचलर्स के लिए furnished PG और rooms। Free WiFi, housekeeping और pocket-friendly किराए के साथ तुरंत रहने की सुविधा उपलब्ध।",
+    img: "https://res.cloudinary.com/dxlykgx6w/image/upload/v1764928068/3d-rendering-modern-dining-room-living-room-with-luxury-decor-yellow-lamp_105762-2232_iu2qqe.avif",
+  },
+  {
+    title: "बिना ब्रोकरेज किराया सेवा",
+    desc: "Verified मालिकों से सीधे जुड़ें और बिना किसी extra charges के अपना फ्लैट किराये पर लें। Fast booking, easy paperwork और 100% assistance।",
+    img: "https://res.cloudinary.com/dxlykgx6w/image/upload/v1764928067/comfortable-living-room-with-gray-sofa_305343-17365_zlfzp5.avif",
+  },
+];
+
   const customLeft = {
     2: "left-[40%]",  // 3rd card
     3: "left-[60%]"   // 4th card
@@ -43,7 +44,7 @@ export default function HomeServices() {
 
       <div className="text-center mb-16">
         <h3 className="text-[32px] italic text-black">Service</h3>
-        <h2 className="text-[42px] font-extrabold text-black">Our Services</h2>
+        <h2 className="text-[42px] font-extrabold text-black">हमारी सेवाएँ</h2>
       </div>
 
       <div className="max-w-[1300px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-15">

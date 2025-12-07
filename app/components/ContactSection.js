@@ -83,7 +83,7 @@ export default function ContactSection() {
 
         {/* LEFT SECTION */}
        <div className="bg-[#1D1D1D] text-white px-8 md:px-20 py-8 flex flex-col justify-center">
-          <h2 className="text-[48px] font-light mb-2">Send a message</h2>
+          <h2 className="text-[48px] font-light mb-2">कृपया अपनी आवश्यकताएँ भरकर बताएं</h2>
           <div className="w-[120px] h-[4px] bg-[#28E7F7] mb-6"></div>
 
           <form className="space-y-4" onSubmit={handleSubmit}>
@@ -100,7 +100,7 @@ export default function ContactSection() {
                 if (val.length > 0 && val.trim() === "") return;
                 setForm((prev) => ({ ...prev, name: val }));
               }}
-              placeholder="Enter Name.*"
+              placeholder="नाम दर्ज करें*"
               required
               autoComplete="off"
               className="w-full border-2 border-white bg-transparent px-5 py-3 rounded-md text-lg outline-none "
@@ -113,12 +113,12 @@ export default function ContactSection() {
               onChange={handleChange}
               required
               autoComplete="off"
-              placeholder="Email Address"
+              placeholder="अपना ईमेल दर्ज करें"
               className="w-full border-2 border-white bg-transparent px-5 py-3 rounded-md text-lg outline-none "
             />
 
             <input
-              type="number"
+              type="text"
               name="phone"
               value={form?.phone}
               onChange={(e) => {
@@ -130,7 +130,7 @@ export default function ContactSection() {
               maxLength={10}
               required
               autoComplete="off"
-              placeholder="Enter Mobile No.*"
+              placeholder="मोबाइल नंबर लिखें*"
               className="w-full border-2 border-white bg-transparent px-5 py-3 rounded-md text-lg outline-none "
             />
 
@@ -142,16 +142,16 @@ export default function ContactSection() {
                 className="w-full border-2 border-white bg-transparent px-5 py-3 rounded-md text-lg outline-none appearance-none text-[gray]"
               >
                 <option value="" disabled className="text-[gray]">
-                  Select Event for
+                  कमरा या फ्लैट चुनें
                 </option>
                 <option value="Birthday" className="text-black">
-                  Birthday
+                  1RK Flat
                 </option>
                 <option value="Corporate Events" className="text-black">
-                  Corporate Events
+                  1BHK Flat
                 </option>
                 <option value="Cultural Events" className="text-black">
-                  Cultural Events
+                  2BHK Flat
                 </option>
               </select>
 
@@ -161,7 +161,7 @@ export default function ContactSection() {
             </div>
 
             <textarea
-              placeholder="Enter Your Message"
+              placeholder="अपना संदेश लिखें"
               id="discussion"
               name="discussion"
               value={form?.discussion}
@@ -178,7 +178,7 @@ export default function ContactSection() {
                   onChange={(e) => setChecked(e.target.checked)}
                   style={{ marginRight: "8px" }}
                 />
-                I accept the{" "}
+                I accept the {" "}
                 <a href="/" target="_blank" rel="noopener noreferrer">
                   privacy policy
                 </a>

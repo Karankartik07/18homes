@@ -85,8 +85,8 @@ export default function ContactFirst() {
           <p className="contact-heading-top">Contact Us</p>
 
           <h2 className="contact-main-heading">
-            CONNECT WITH <span className="pink-text">18 Homes</span>{" "}
-            SUPPORT
+            <span className="pink-text">18homes</span>{" "}
+             सपोर्ट से जुड़ें
           </h2>
 
           <div className="contact-grid">
@@ -98,7 +98,7 @@ export default function ContactFirst() {
                 </div>
 
                 <div>
-                  <p className="info-title">Give Us A Call</p>
+                  <p className="info-title">हमें कॉल करें</p>
                   <p className="info-value">+911234567890</p>
                 </div>
               </div>
@@ -111,7 +111,7 @@ export default function ContactFirst() {
                 </div>
 
                 <div>
-                  <p className="info-title">Send Us A Message</p>
+                  <p className="info-title">हमें संदेश भेजें</p>
                   <p className="info-value">abc@gmail.com</p>
                 </div>
               </div>
@@ -124,7 +124,7 @@ export default function ContactFirst() {
                 </div>
 
                 <div>
-                  <p className="info-title">Visit Our Location</p>
+                  <p className="info-title">हमारे स्थान पर आएं</p>
                   <p className="info-value">
                     MB-27 Basement, Regalia Heights, Shipra Suncity, Ghaziabad.
                   </p>
@@ -165,7 +165,7 @@ export default function ContactFirst() {
                     if (val.length > 0 && val.trim() === "") return;
                     setForm((prev) => ({ ...prev, name: val }));
                   }}
-                  placeholder="Enter Name.*"
+                  placeholder="अपना नाम दर्ज करें"
                   required
                   autoComplete="off"
                 />
@@ -182,7 +182,7 @@ export default function ContactFirst() {
                   maxLength={10}
                   required
                   autoComplete="off"
-                  placeholder="Enter Mobile No.*"
+                  placeholder="मोबाइल नंबर दर्ज करें*"
                 />
               </div>
 
@@ -194,14 +194,14 @@ export default function ContactFirst() {
                   onChange={handleChange}
                   required
                   autoComplete="off"
-                  placeholder="Email Address"
+                  placeholder="ईमेल पता"
                 />
                 <input
                   type="text"
                   name="website"
                   value={form?.website}
                   onChange={handleChange}
-                  placeholder="Select Event for"
+                  placeholder="इवेंट चुनें"
                 />
               </div>
 
@@ -211,7 +211,7 @@ export default function ContactFirst() {
                 name="discussion"
                 value={form?.discussion}
                 onChange={handleChange}
-                placeholder="Your Message"
+                placeholder="आपका संदेश"
               ></textarea>
               {/* Privacy Policy Checkbox */}
               <div>
