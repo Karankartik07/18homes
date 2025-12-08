@@ -51,7 +51,7 @@ export default function Navbar({color}) {
           {/* Logo */}
           <Link href="/">
             <Image
-              src={"https://res.cloudinary.com/dxlykgx6w/image/upload/v1764947537/5771-removebg-preview_vczs6r.png"}
+              src={"https://res.cloudinary.com/dxlykgx6w/image/upload/v1765113787/18home_nfbc2b.jpg"}
               alt="Logo"
               width={70}
               height={70}

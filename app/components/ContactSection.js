@@ -142,7 +142,7 @@ export default function ContactSection() {
                 className="w-full border-2 border-white bg-transparent px-5 py-3 rounded-md text-lg outline-none appearance-none text-[gray]"
               >
                 <option value="" disabled className="text-[gray]">
-                  कमरा या फ्लैट चुनें
+                  कमरा या फ्लैट चुनें 1BHK/2BHK/3BHK*
                 </option>
                 <option value="Birthday" className="text-black">
                   1RK Flat

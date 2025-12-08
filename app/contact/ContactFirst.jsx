@@ -123,12 +123,12 @@ export default function ContactFirst() {
                   <FaMapMarkedAlt size={30} />
                 </div>
 
-                <div>
+                {/* <div>
                   <p className="info-title">हमारे स्थान पर आएं</p>
                   <p className="info-value">
                     MB-27 Basement, Regalia Heights, Shipra Suncity, Ghaziabad.
                   </p>
-                </div>
+                </div> */}
               </div>
               <hr />
               {/* BOTTOM SOCIAL ICONS */}
@@ -201,7 +201,7 @@ export default function ContactFirst() {
                   name="website"
                   value={form?.website}
                   onChange={handleChange}
-                  placeholder="इवेंट चुनें"
+                  placeholder="कमरा या फ्लैट 1BHK/2BHK/3BHK*"
                 />
               </div>
 
@@ -277,7 +277,7 @@ export default function ContactFirst() {
       </section>
 
       {/* ================= MAP SECTION ================= */}
-      <section className="map-section">
+      {/* <section className="map-section">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28000.172833179113!2d77.47271883869992!3d28.689000340540407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf230c51204b1%3A0xd053494ad5b99485!2sGovindpuram%2C%20Ghaziabad%2C%20Uttar%20Pradesh%20201013!5e0!3m2!1sen!2sin!4v1765114558215!5m2!1sen!2sin"
           width="100%"
@@ -287,7 +287,7 @@ export default function ContactFirst() {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
-      </section>
+      </section> */}
     </>
   );
 }

@@ -118,36 +118,8 @@ export async function POST(req) {
       errors.push({ type: 'user_email', error: emailError.message });
     }
 
-    // Create lead in CRM
-    try {
-      const res = await fetch("https://prdbackend.kdscrm.com/lead/createExternalLead?id=685e3eb91f7c9324729aa63c", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          FirstName: name,
-          Phone: phone,
-          Email: email,
-          DescriptionInfo: discussion,
-          LeadSource: "KR Customizer",
-        }),
-      });
 
-      console.log("Lead creation response status:", res.status);
-
-      if (res.ok) {
-        emailStatus.lead = true;
-        console.log(" Lead created successfully");
-      } else {
-        const errorText = await res.text();
-        console.error("Lead creation failed:", errorText);
-        errors.push({ type: 'lead_creation', error: `Status ${res.status}: ${errorText}` });
-      }
-    } catch (leadError) {
-      console.error("Lead creation error:", leadError.message);
-      errors.push({ type: 'lead_creation', error: leadError.message });
-    }
+    
 
     //  Determine response based on what succeeded
     const allSuccess = emailStatus.admin && emailStatus.user && emailStatus.lead;
