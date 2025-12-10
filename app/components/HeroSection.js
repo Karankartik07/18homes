@@ -72,8 +72,9 @@ function BannerSlide({ image }) {
       />
 
       <div className="relative z-20 max-w-[900px] px-4">
+        <h2 className="text-[black] text-3xl md:text-4xl mb-4 font-medium bg-[white] p-3">Ghaziabad / Noida Special </h2>
         <h3
-          className="text-white text-3xl md:text-4xl font-light  mb-3"
+          className="text-[black] text-3xl md:text-4xl font-light  mb-3"
           style={{ fontFamily: "'Dancing Script', cursive" }}
         >
          आज का प्रीमियम ऑफर
@@ -81,11 +82,11 @@ function BannerSlide({ image }) {
 
         </h3>
 
-        <h1 className="text-white text-5xl md:text-6xl font-bold tracking-wide">
+        <h1 className="text-[black] text-5xl md:text-6xl font-bold tracking-wide">
          लक्ज़री फ्लैट्स आपके बजट में
         </h1>
 
-        <h2 className="text-white text-4xl md:text-4xl font-semibold mt-1">
+        <h2 className="text-[black] text-4xl md:text-4xl font-semibold mt-1">
          अपने सपनों का घर आज ही बुक करें
         </h2>
 

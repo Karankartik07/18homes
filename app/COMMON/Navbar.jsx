@@ -1,10 +1,9 @@
 "use client";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import Link from "next/link";
-import { IoIosArrowDown } from "react-icons/io";
+import { useEffect, useState } from "react";
+import { FaWhatsapp } from "react-icons/fa6";
 import { GiHamburgerMenu } from "react-icons/gi";
-
 import { IoMdClose } from "react-icons/io"; // cross icon
 
 export default function Navbar({color}) {
@@ -84,19 +83,26 @@ export default function Navbar({color}) {
 
         {/* RIGHT BUTTONS */}
         <div className="desktop-actions items-center gap-4">
+         
           <Link
             href={"/contact"}
-            className="px-7 py-2 font-bold border border-[#4dd2ff] text-[#4dd2ff] rounded-full text-[18px] hover:bg-[#4dd2ff]/20 transition"
+            className="px-7 py-2 font-bold border border-[#8c4bdc] text-[#8c4bdc] rounded-full text-[18px] hover:border-[#c04b7e] hover:bg-[#c04b7e] hover:text-[black] transition"
           >
             अभी बुक करें
           </Link>
 
           <a
-            href="tel:+919876543210"
-            className="px-7 py-2 font-bold bg-[#3FFAFF] text-[#101010] rounded-full text-[18px] hover:bg-[#3be8f3] transition"
+            href="tel:+917827602246"
+            className="px-7 py-2 font-bold bg-[#c04b7e] border-[#c04b7e] text-[#101010] rounded-full text-[18px] border hover:border-[#8c4bdc] hover:bg-transparent hover:text-[#8c4bdc] transition"
           >
             कॉल करें
           </a>
+           <Link
+             href="https://wa.me/+917827602246"
+            className="px-7 py-2 font-bold border border-[#43b852] text-[#2fb464] bg-[white] rounded-full text-[18px] hover:border-[#3be8f3]  hover:text-[black] transition"
+          >
+            <FaWhatsapp />
+          </Link>
         </div>
 
         <button

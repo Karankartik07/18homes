@@ -18,7 +18,7 @@ export default function Footer() {
           <Link href="/">
             <img
               src={
-                "https://res.cloudinary.com/dxlykgx6w/image/upload/v1764947537/5771-removebg-preview_vczs6r.png"
+                "https://res.cloudinary.com/dxlykgx6w/image/upload/v1765113787/18home_nfbc2b.jpg"
               }
               alt="logo"
               className="w-[80px] h-[80px] object-contain"
@@ -67,11 +67,11 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-6 tracking-wide">OFFICE</h3>
 
             <p className="text-[16px] leading-7 mb-6 font-normal">
-              MB-27 Basement, Regalia Heights,
+              Kanak Farm House ,
               <br />
-              Shipra Suncity, Ghaziabad, (U.P.)
+              GovindPuram , Ghaziabad, (U.P.)
               <br />
-              201014
+              201013
             </p>
 
             <div className="flex items-center gap-3 mb-4">
@@ -84,7 +84,7 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <IoMdCall size={22} />
               <p className="text-[16px] font-normal">
-                +91 90000000 / +91 9000000
+                +91 7827602246
               </p>
             </div>
           </div>

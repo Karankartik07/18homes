@@ -116,20 +116,20 @@ export default function ContactFirst() {
                 </div>
               </div>
 
-              <hr />
+              {/* <hr /> */}
 
-              <div className="info-block">
+              {/* <div className="info-block">
                 <div className="icon-wrap">
                   <FaMapMarkedAlt size={30} />
                 </div>
 
-                {/* <div>
+                <div>
                   <p className="info-title">हमारे स्थान पर आएं</p>
                   <p className="info-value">
                     MB-27 Basement, Regalia Heights, Shipra Suncity, Ghaziabad.
                   </p>
-                </div> */}
-              </div>
+                </div>
+              </div> */}
               <hr />
               {/* BOTTOM SOCIAL ICONS */}
               <div className="bottom-row">
