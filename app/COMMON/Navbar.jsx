@@ -6,7 +6,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io"; // cross icon
 
-export default function Navbar({color}) {
+export default function Navbar({ color }) {
   const [open, setOpen] = useState(false);
   useEffect(() => {
     const handleResize = () => {
@@ -50,7 +50,9 @@ export default function Navbar({color}) {
           {/* Logo */}
           <Link href="/">
             <Image
-              src={"https://res.cloudinary.com/dxlykgx6w/image/upload/v1765113787/18home_nfbc2b.jpg"}
+              src={
+                "https://res.cloudinary.com/dxlykgx6w/image/upload/v1765113787/18home_nfbc2b.jpg"
+              }
               alt="Logo"
               width={70}
               height={70}
@@ -59,7 +61,9 @@ export default function Navbar({color}) {
           </Link>
 
           <ul
-            className={`desktop-menu hidden lg:flex items-center gap-8 ${isScrolled ? "text-black" : `text-${color}`} text-[18px]`}
+            className={`desktop-menu hidden lg:flex items-center gap-8 ${
+              isScrolled ? "text-black" : `text-${color}`
+            } text-[18px]`}
           >
             <li>
               <Link href="/">होम</Link>
@@ -68,13 +72,10 @@ export default function Navbar({color}) {
               <Link href="/about">हमारे बारे में</Link>
             </li>
 
-        
             <li className="relative group cursor-pointer">
-                  <Link href="/service">हमारी सेवाएँ</Link>    
-            
+              <Link href="/service">हमारी सेवाएँ</Link>
             </li>
 
-            
             <li>
               <Link href="/contact">संपर्क करें</Link>
             </li>
@@ -83,7 +84,6 @@ export default function Navbar({color}) {
 
         {/* RIGHT BUTTONS */}
         <div className="desktop-actions items-center gap-4">
-         
           <Link
             href={"/contact"}
             className="px-7 py-2 font-bold border border-[#8c4bdc] text-[#8c4bdc] rounded-full text-[18px] hover:border-[#c04b7e] hover:bg-[#c04b7e] hover:text-[black] transition"
@@ -97,8 +97,8 @@ export default function Navbar({color}) {
           >
             कॉल करें
           </a>
-           <Link
-             href="https://wa.me/+917827602246"
+          <Link
+            href="https://wa.me/+917827602246"
             className="px-7 py-2 font-bold border border-[#43b852] text-[#2fb464] bg-[white] rounded-full text-[18px] hover:border-[#3be8f3]  hover:text-[black] transition"
           >
             <FaWhatsapp />
@@ -109,7 +109,13 @@ export default function Navbar({color}) {
           className="hamburger-icon lg:hidden text-black text-4xl"
           onClick={() => setOpen(!open)}
         >
-          {open ? <IoMdClose /> : <GiHamburgerMenu className={`${!isScrolled ? "text-white":"text-black"}`} />}
+          {open ? (
+            <IoMdClose />
+          ) : (
+            <GiHamburgerMenu
+              className={`${!isScrolled ? "text-white" : "text-black"}`}
+            />
+          )}
         </button>
       </div>
 
@@ -121,7 +127,7 @@ export default function Navbar({color}) {
       )}
 
       <div
-        className={`border-t border-t-neutral-300 mt-2 fixed top-20 left-0 h-full w-full bg-white shadow-xl z-50 p-8 pt-5
+        className={`border-t border-t-neutral-300 mt-2 fixed top-19 left-0 h-full w-full bg-white shadow-xl z-50 p-8 pt-5
     transform transition-transform duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]
     ${open ? "translate-x-0" : "-translate-x-full"}`}
       >
@@ -136,15 +142,12 @@ export default function Navbar({color}) {
           {/* SERVICES ACCORDION */}
           <div className="flex flex-col">
             <Link
-            href={"/service"}
+              href={"/service"}
               onClick={() => setShowServices(!showServices)}
               className="flex justify-between items-center w-full"
             >
               हमारी सेवाएँ
-              
             </Link>
-
-         
           </div>
 
           <Link href="/contact" onClick={() => setOpen(false)}>
@@ -157,10 +160,15 @@ export default function Navbar({color}) {
           >
             अभी बुक करें
           </Link>
-
+          <Link
+            href="https://wa.me/+917827602246"
+            className="px-7 py-2 font-bold border w-[80px] border-[#43b852] text-[#2fb464] bg-[white] rounded-full text-[18px] hover:border-[#3be8f3]  hover:text-[black] transition"
+          >
+            <FaWhatsapp />
+          </Link>
           <a
             href="tel:+919876543210"
-            className="w-[200px] px-7 py-2 bg-[#4df5ff] text-black rounded-full"
+            className="w-[150px] px-7 py-2 bg-[#4df5ff] text-black rounded-full"
           >
             कॉल करें
           </a>
