@@ -29,7 +29,7 @@ export async function POST(req) {
 
     //  Admin ko notification
     const adminMailOptions = {
-      from: '"DJ Harmony Beats" <karan.kushel7@gmail.com>',
+      from: '"18Homes" <karan.kushel7@gmail.com>',
       to: "karan.kushel7@gmail.com",
       subject: "New Contact Form Submission",
       html: `
@@ -48,7 +48,7 @@ export async function POST(req) {
                   <tr style="background:#f9f9f9;"><td style="font-weight:bold; width:120px;">👤 Name:</td><td>${name}</td></tr>
                   <tr><td style="font-weight:bold;">📧 Email:</td><td>${email}</td></tr>
                   <tr style="background:#f9f9f9;"><td style="font-weight:bold;">📞 Phone:</td><td>${phone}</td></tr>
-                  <tr><td style="font-weight:bold;">🌐 Website:</td><td>${website || "N/A"}</td></tr>
+                  <tr><td style="font-weight:bold;">🌐Flat type:</td><td>${website || "N/A"}</td></tr>
                   <tr style="background:#f9f9f9;"><td style="font-weight:bold;">💬 Message:</td><td>${discussion}</td></tr>
                 </table>
               </td>
@@ -60,7 +60,7 @@ export async function POST(req) {
 
     //  User ko Thank You email
     const userMailOptions = {
-      from: '"DJ Harmony Beats" <karan.kushel7@gmail.com>',
+      from: '"18Homes" <karan.kushel7@gmail.com>',
       to: email,
       subject: "Thank You for Contacting Us!",
       html: `
