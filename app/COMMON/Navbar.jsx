@@ -167,7 +167,7 @@ export default function Navbar({ color }) {
             <FaWhatsapp />
           </Link>
           <a
-            href="tel:+919876543210"
+            href="tel:+917827602246"
             className="w-[150px] px-7 py-2 bg-[#4df5ff] text-black rounded-full"
           >
             कॉल करें
