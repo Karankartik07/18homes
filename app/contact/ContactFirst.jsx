@@ -99,7 +99,9 @@ export default function ContactFirst() {
 
                 <div>
                   <p className="info-title">हमें कॉल करें</p>
-                  <p className="info-value">+911234567890</p>
+                  <a href="tel:+917827602246" className="info-value">
+  +91 7827602246
+</a>
                 </div>
               </div>
 
@@ -112,7 +114,9 @@ export default function ContactFirst() {
 
                 <div>
                   <p className="info-title">हमें संदेश भेजें</p>
-                  <p className="info-value">abc@gmail.com</p>
+                  <a href="mailto:gravi1951224r@gmail.com" className="info-value">
+  gravi1951224r@gmail.com
+</a>
                 </div>
               </div>
 
