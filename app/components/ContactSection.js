@@ -144,13 +144,13 @@ export default function ContactSection() {
                 <option value="" disabled className="text-[gray]">
                   कमरा या फ्लैट चुनें 1BHK/2BHK/3BHK*
                 </option>
-                <option value="Birthday" className="text-black">
+                <option value="1RK Flat" className="text-black">
                   1RK Flat
                 </option>
-                <option value="Corporate Events" className="text-black">
+                <option value="1BHK Flat" className="text-black">
                   1BHK Flat
                 </option>
-                <option value="Cultural Events" className="text-black">
+                <option value="2BHK Flat" className="text-black">
                   2BHK Flat
                 </option>
               </select>
