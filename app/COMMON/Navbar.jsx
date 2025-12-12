@@ -99,9 +99,9 @@ export default function Navbar({ color }) {
           </a>
           <Link
             href="https://wa.me/+917827602246"
-            className="px-7 py-2 font-bold border border-[#43b852] text-[#2fb464] bg-[white] rounded-full text-[18px] hover:border-[#3be8f3]  hover:text-[black] transition"
+            className="px-7 py-2 font-bold border w-[200px] gap-2 flex border-[#43b852] text-[#2fb464] bg-[white] rounded-full text-[18px] hover:border-[#3be8f3]  hover:text-[black] transition"
           >
-            <FaWhatsapp />
+            <FaWhatsapp size={24}/> <span>Whatsapp</span>
           </Link>
         </div>
 
@@ -156,19 +156,19 @@ export default function Navbar({ color }) {
 
           <Link
             href={"/contact"}
-            className="w-[200px] px-7 mt-4 py-2 border border-[#4dd2ff] text-[#4dd2ff] rounded-full"
+            className="w-[153px] px-7 mt-4 py-2 border border-[black] text-[black] rounded-full"
           >
             अभी बुक करें
           </Link>
           <Link
             href="https://wa.me/+917827602246"
-            className="px-7 py-2 font-bold border w-[80px] border-[#43b852] text-[#2fb464] bg-[white] rounded-full text-[18px] hover:border-[#3be8f3]  hover:text-[black] transition"
+            className="px-7 py-2 font-bold border w-[180px] flex gap-2 items-center border-[#43b852] text-[#2fb464] bg-[white] rounded-full text-[18px] hover:border-[#3be8f3]  hover:text-[black] transition"
           >
-            <FaWhatsapp />
+            <FaWhatsapp size={28}/> <span>Whatsapp</span>
           </Link>
           <a
             href="tel:+917827602246"
-            className="w-[150px] px-7 py-2 bg-[#4df5ff] text-black rounded-full"
+            className="w-[120px] px-7 py-2 border-[red] border text-black rounded-full"
           >
             कॉल करें
           </a>
