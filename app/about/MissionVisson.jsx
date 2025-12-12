@@ -5,7 +5,7 @@ function MissionVisson() {
   return (
     <div>
       <section className="w-full bg-[#1B1333] py-20 relative">
-        <div className="max-w-[1500px] mx-auto px-28 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="max-w-[1500px] mx-auto px-5  md:px-28 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* LEFT — ONE FULL LARGE IMAGE */}
           <div className="w-full">
             <img

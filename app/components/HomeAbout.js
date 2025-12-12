@@ -58,7 +58,7 @@ export default function HomeAbout() {
               src="https://res.cloudinary.com/dxlykgx6w/image/upload/v1765125152/WhatsApp_Image_2025-12-07_at_9.01.16_PM_fuflru.jpg"
               alt="Studio Image"
               fill
-              className="object-cover"
+              className="object-contain"
             />
           </div>
         </div>

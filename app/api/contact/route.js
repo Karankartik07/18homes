@@ -22,22 +22,24 @@ export async function POST(req) {
       port: 465,
       secure: true,
       auth: {
-        user: "karan.kushel7@gmail.com",
-        pass: "detmdedyxulecenh",
+        user: "ravi18homes@gmail.com",
+        pass: "eilnwchjkeoctgss",
       },
     });
 
     //  Admin ko notification
     const adminMailOptions = {
-      from: '"18Homes" <karan.kushel7@gmail.com>',
-      to: "karan.kushel7@gmail.com",
+
+      from: '"18 Homes" <ravi18homes@gmail.com>',
+      to: "ravi18homes@gmail.com",
+
       subject: "New Contact Form Submission",
       html: `
         <div style="font-family: Poppins, sans-serif; background:#f4f4f7; padding:30px; color:#333;">
           <table align="center" cellpadding="0" cellspacing="0" style="max-width:600px; background:#ffffff; border-radius:10px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
             <tr>
               <td style="background:#4f46e5; padding:20px; text-align:center; color:#fff;">
-                <h2 style="margin:0;">DJ Harmony Beats</h2>
+                <h2 style="margin:0;">18 Homes</h2>
                 <p style="margin:5px 0 0; font-size:14px;">New Contact Request</p>
               </td>
             </tr>
@@ -60,7 +62,7 @@ export async function POST(req) {
 
     //  User ko Thank You email
     const userMailOptions = {
-      from: '"18Homes" <karan.kushel7@gmail.com>',
+      from: '"18 Homes" <ravi18homes@gmail.com>',
       to: email,
       subject: "Thank You for Contacting Us!",
       html: `
