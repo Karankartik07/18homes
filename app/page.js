@@ -17,9 +17,7 @@ export default function Home() {
       <HeroSlider/>
       <HomeAbout/>
        <HomeServices/> 
-    
       <HomeBlogs/>
-    
       <InstrumentsSection/>
       <Testimonials/>
       <ContactSection/>

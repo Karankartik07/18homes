@@ -144,13 +144,13 @@ export default function ContactSection() {
                 <option value="" disabled className="text-[gray]">
                   कमरा या फ्लैट चुनें 1BHK/2BHK/3BHK*
                 </option>
-                <option value="Birthday" className="text-black">
+                <option value="1RK Flat" className="text-black">
                   1RK Flat
                 </option>
-                <option value="Corporate Events" className="text-black">
+                <option value="1BHK Flat" className="text-black">
                   1BHK Flat
                 </option>
-                <option value="Cultural Events" className="text-black">
+                <option value="2BHK Flat" className="text-black">
                   2BHK Flat
                 </option>
               </select>
@@ -207,14 +207,14 @@ export default function ContactSection() {
         {/* RIGHT IMAGE SECTION */}
         <div className="bg-[#14253e] relative hidden lg:block overflow-hidden">
 
-          <div className="absolute top-0 left-0 w-full h-[5px] z-30"></div>
+          {/* <div className="absolute top-0 left-0 w-full h-[5px] z-30"></div> */}
 
-          <div className="absolute inset-0 origin-top-left rotate-[-4deg]">
+          <div className="absolute inset-0 origin-top-left ">
             <Image
-              src="https://res.cloudinary.com/dxlykgx6w/image/upload/v1764948504/modern-apartment-architecture1_zcamv1.jpg"
+              src="https://res.cloudinary.com/dxlykgx6w/image/upload/v1765125152/WhatsApp_Image_2025-12-07_at_9.01.16_PM_fuflru.jpg"
               alt="Contact Image"
               fill
-              className="object-cover"
+              className="object-contain"
             />
           </div>
 
