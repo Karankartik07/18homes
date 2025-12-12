@@ -29,8 +29,10 @@ export async function POST(req) {
 
     //  Admin ko notification
     const adminMailOptions = {
+
       from: '"18 Homes" <ravi18homes@gmail.com>',
       to: "ravi18homes@gmail.com",
+
       subject: "New Contact Form Submission",
       html: `
         <div style="font-family: Poppins, sans-serif; background:#f4f4f7; padding:30px; color:#333;">
@@ -48,7 +50,7 @@ export async function POST(req) {
                   <tr style="background:#f9f9f9;"><td style="font-weight:bold; width:120px;">👤 Name:</td><td>${name}</td></tr>
                   <tr><td style="font-weight:bold;">📧 Email:</td><td>${email}</td></tr>
                   <tr style="background:#f9f9f9;"><td style="font-weight:bold;">📞 Phone:</td><td>${phone}</td></tr>
-                  <tr><td style="font-weight:bold;">🌐 Website:</td><td>${website || "N/A"}</td></tr>
+                  <tr><td style="font-weight:bold;">🌐Flat type:</td><td>${website || "N/A"}</td></tr>
                   <tr style="background:#f9f9f9;"><td style="font-weight:bold;">💬 Message:</td><td>${discussion}</td></tr>
                 </table>
               </td>
