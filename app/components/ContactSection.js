@@ -207,14 +207,14 @@ export default function ContactSection() {
         {/* RIGHT IMAGE SECTION */}
         <div className="bg-[#14253e] relative hidden lg:block overflow-hidden">
 
-          <div className="absolute top-0 left-0 w-full h-[5px] z-30"></div>
+          {/* <div className="absolute top-0 left-0 w-full h-[5px] z-30"></div> */}
 
-          <div className="absolute inset-0 origin-top-left rotate-[-4deg]">
+          <div className="absolute inset-0 origin-top-left ">
             <Image
-              src="https://res.cloudinary.com/dxlykgx6w/image/upload/v1764948504/modern-apartment-architecture1_zcamv1.jpg"
+              src="https://res.cloudinary.com/dxlykgx6w/image/upload/v1765125152/WhatsApp_Image_2025-12-07_at_9.01.16_PM_fuflru.jpg"
               alt="Contact Image"
               fill
-              className="object-cover"
+              className="object-contain"
             />
           </div>
 

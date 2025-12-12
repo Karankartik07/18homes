@@ -55,7 +55,8 @@ export default function HomeAbout() {
         <div className="w-full ">
           <div className="relative w-full h-[430px] rounded-sm overflow-hidden shadow-lg">
             <Image
-              src="https://res.cloudinary.com/dxlykgx6w/image/upload/v1765125152/WhatsApp_Image_2025-12-07_at_9.01.16_PM_fuflru.jpg"
+              src="https://res.cloudinary.com/dxlykgx6w/image/upload/v1765562605/1765562251061_vqijhn.png"
+              // src="https://res.cloudinary.com/dxlykgx6w/image/upload/v1765125152/WhatsApp_Image_2025-12-07_at_9.01.16_PM_fuflru.jpg"
               alt="Studio Image"
               fill
               className="object-contain"
